@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hnf.qoryummuhanifah_1202154357_modul2.DineIn">
+
+    <TextView
+        android:id="@+id/dinein_pemesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="Data Pelanggan: "/>
+
+    <EditText
+        android:id="@+id/dinein_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:ems="13"
+        android:hint="Name"
+        android:backgroundTint="@color/colorAccent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/dinein_meja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:textSize="15dp"
+            android:text="Pilih No. Meja: "/>
+
+        <Spinner
+            android:id="@+id/dinein_spinmeja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+        </Spinner>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dinein_pilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorMerah"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Order Now"
+        android:onClick="pilihpesan"/>
+
+
+</LinearLayout>

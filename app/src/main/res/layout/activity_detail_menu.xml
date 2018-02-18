@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        style="@style/AlertDialog.AppCompat"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:text="Food Name"/>
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:src="@drawable/americano_coffee"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Price"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Komposisi : "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="Air, Coffee, Susu, Gula"/>
+</LinearLayout>

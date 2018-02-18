@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hnf.qoryummuhanifah_1202154357_modul2.TakeAway">
+
+    <TextView
+        android:id="@+id/takeaway_pemesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Data Pelanggan"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/takeaway_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="13"
+        android:hint="Nama" />
+
+    <EditText
+        android:id="@+id/takeaway_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="13"
+        android:hint="Telepon"
+        android:inputType="phone" />
+
+
+    <EditText
+        android:id="@+id/takeaway_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="13"
+        android:hint="Alamat" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/bTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIME"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorMerah"
+            android:layout_marginLeft="90dp"
+            android:onClick="time"/>
+
+        <Button
+            android:id="@+id/bDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Date"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorMerah"
+            android:layout_gravity="center"
+            android:onClick="date"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorMerah"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Choose Order"
+        android:onClick="pesan"/>
+
+</LinearLayout>
